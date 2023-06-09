@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Second Assigment</title>
+
+    <style>
+        body{
+            background-color: purple;
+        }
+        /*section{*/
+        /*    width: 200px;*/
+        /*    aspect-ratio: 1/1;*/
+        /*    background-color: darkgray;*/
+        /*    border: 10px solid white;*/
+        /*    border-top-color: red;*/
+        /*    border-radius: 100%;*/
+
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    bottom: 0;*/
+        /*    left: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+
+
+        /*}*/
+
+        section>h1{
+            width: max-content;
+            height: max-content;
+            color: white;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        section::before{
+            content: "";
+
+            width: 200px;
+            aspect-ratio: 1/1;
+            background-color: darkgray;
+            border: 10px solid white;
+            border-top-color: red;
+            border-radius: 100%;
+
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        section:hover::before{
+            transform: rotate(10000deg);
+            transition-duration: 20s;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<section>
+    <h1>RWAD</h1>
+</section>
+</body>
+</html>
